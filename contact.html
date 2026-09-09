@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Showroom Location | Elite Motors Lahore</title>
+    
+    <!-- Google Font: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Manrope"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            dark: '#0f172a',
+                            emerald: '#10b981',
+                            slate: '#475569',
+                            lightBg: '#f8fafc'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-[#FFFFFF] text-brand-dark font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-sky-400 flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                    EM
+                </div>
+                <div>
+                    <span class="font-extrabold text-xl tracking-tight text-brand-dark block">ELITE MOTORS</span>
+                    <span class="text-[10px] font-semibold tracking-widest text-brand-500 uppercase block -mt-1">LAHORE</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-1 bg-slate-50/80 p-1.5 rounded-full border border-slate-200/60">
+                <a href="index.html" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 hover:text-brand-600 hover:bg-white/60 transition-all">Home</a>
+                <a href="inventory.html" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 hover:text-brand-600 hover:bg-white/60 transition-all">Inventory</a>
+                <a href="financing.html" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 hover:text-brand-600 hover:bg-white/60 transition-all">Financing</a>
+                <a href="about.html" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 hover:text-brand-600 hover:bg-white/60 transition-all">About Us</a>
+                <a href="contact.html" class="px-5 py-2 rounded-full text-sm font-semibold text-brand-600 bg-white shadow-sm transition-all">Contact</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="https://wa.me/923004567890" target="_blank" class="px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all shadow-md flex items-center gap-2">
+                    💬 WhatsApp Us
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="mobileMenuBtn" aria-label="Toggle menu" class="md:hidden p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4">
+            <a href="index.html" class="block font-semibold text-slate-700 hover:text-brand-600 py-2 border-b border-slate-100">Home</a>
+            <a href="inventory.html" class="block font-semibold text-slate-700 hover:text-brand-600 py-2 border-b border-slate-100">Inventory</a>
+            <a href="financing.html" class="block font-semibold text-slate-700 hover:text-brand-600 py-2 border-b border-slate-100">Financing</a>
+            <a href="about.html" class="block font-semibold text-slate-700 hover:text-brand-600 py-2 border-b border-slate-100">About Us</a>
+            <a href="contact.html" class="block font-bold text-brand-600 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="py-12 lg:py-16 bg-gradient-to-b from-brand-50/50 via-white to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-600 border border-brand-100 text-xs font-extrabold tracking-wide uppercase">
+                Showroom & Concierge Service
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-brand-dark tracking-tight">
+                Connect With Our Luxury Specialists
+            </h1>
+            <p class="text-slate-600 text-base max-w-2xl mx-auto font-medium">
+                Visit our DHA Phase 6 flagship showroom in Lahore or request a personalized private test drive at your residence.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3-CARD ICON GRID -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1: WhatsApp -->
+                <a href="https://wa.me/923004567890" target="_blank" class="p-6 bg-emerald-50/60 border border-emerald-200 rounded-3xl hover:shadow-lg transition-all flex items-start gap-4 group">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center font-bold text-xl shadow-md group-hover:scale-110 transition-transform">
+                        💬
+                    </div>
+                    <div>
+                        <span class="text-xs font-extrabold text-emerald-700 uppercase tracking-wider block mb-1">Instant WhatsApp</span>
+                        <h3 class="text-lg font-extrabold text-brand-dark">+92 300 4567890</h3>
+                        <p class="text-xs text-slate-500 font-medium mt-1">Available 24/7 for inventory inquiries & photos</p>
+                    </div>
+                </a>
+
+                <!-- Card 2: Phone -->
+                <a href="tel:+924235789012" class="p-6 bg-sky-50/60 border border-sky-200 rounded-3xl hover:shadow-lg transition-all flex items-start gap-4 group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500 text-white flex items-center justify-center font-bold text-xl shadow-md group-hover:scale-110 transition-transform">
+                        📞
+                    </div>
+                    <div>
+                        <span class="text-xs font-extrabold text-brand-700 uppercase tracking-wider block mb-1">Showroom Landline</span>
+                        <h3 class="text-lg font-extrabold text-brand-dark">+92 42 35789012</h3>
+                        <p class="text-xs text-slate-500 font-medium mt-1">Direct access to sales desk & appointments</p>
+                    </div>
+                </a>
+
+                <!-- Card 3: Visit -->
+                <div class="p-6 bg-slate-50 border border-slate-200 rounded-3xl flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-dark text-white flex items-center justify-center font-bold text-xl shadow-md">
+                        📍
+                    </div>
+                    <div>
+                        <span class="text-xs font-extrabold text-slate-400 uppercase tracking-wider block mb-1">Flagship Address</span>
+                        <h3 class="text-sm font-extrabold text-brand-dark">Main Blvd, Phase 6, DHA</h3>
+                        <p class="text-xs text-slate-500 font-medium mt-1">Plot 45, Lahore, Punjab, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPLIT FORM & MAP / SHOWROOM INFO SECTION -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left: Interactive Form -->
+                <div class="lg:col-span-7 bg-slate-50 border border-slate-200 p-8 sm:p-10 rounded-3xl shadow-sm space-y-6">
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-brand-dark">Request a Consultation or Test Drive</h2>
+                        <p class="text-xs font-medium text-slate-500 mt-1">Fill out the form below and our team will get in touch within 2 hours.</p>
+                    </div>
+
+                    <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you! Your message and test drive request have been received. Our sales executive will call you shortly.');" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="fullName" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Full Name *</label>
+                                <input type="text" id="fullName" required placeholder="e.g. Mian Shahzaib" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="phoneNum" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Phone / WhatsApp *</label>
+                                <input type="tel" id="phoneNum" required placeholder="+92 300 1234567" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="emailAddr" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Email Address</label>
+                                <input type="email" id="emailAddr" placeholder="name@domain.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="vehicleChoice" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Preferred Vehicle</label>
+                                <select id="vehicleChoice" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none font-semibold text-slate-700">
+                                    <option value="general">General Showroom Inquiry</option>
+                                    <option value="porsche-taycan">Porsche Taycan Turbo S</option>
+                                    <option value="porsche-911">Porsche 911 GT3 RS</option>
+                                    <option value="maybach-s580">Mercedes-Maybach S580</option>
+                                    <option value="range-rover">Range Rover Autobiography</option>
+                                    <option value="amg-g63">Mercedes-AMG G63</option>
+                                    <option value="custom-import">Custom Order Import Request</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="userMsg" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Message / Test Drive Preference</label>
+                            <textarea id="userMsg" rows="4" placeholder="Let us know your preferred date/time or specific custom requirements..." class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none"></textarea>
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="vipCallback" class="rounded text-brand-500 focus:ring-brand-500">
+                            <label for="vipCallback" class="text-xs font-semibold text-slate-600 cursor-pointer">Request confidential home delivery test drive in Lahore</label>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-brand-dark hover:bg-slate-800 text-white font-bold text-sm rounded-xl shadow-lg transition-all">
+                            Submit Request &rarr;
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Showroom Map & Live Hours Bar Chart -->
+                <div class="lg:col-span-5 space-y-8">
+                    
+                    <!-- Live Showroom Status Indicator Card -->
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-extrabold text-brand-dark text-base">Showroom Operating Hours</h3>
+                            <span id="openStatusBadge" class="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                Checking status...
+                            </span>
+                        </div>
+
+                        <!-- Visual Peak Hours Bar Chart -->
+                        <div class="space-y-2 pt-2">
+                            <div class="flex justify-between text-[11px] font-bold text-slate-400">
+                                <span>Weekly Visitor Footfall Peak</span>
+                                <span>10 AM - 9 PM PKT</span>
+                            </div>
+                            <div class="grid grid-cols-7 gap-1.5 h-16 items-end bg-slate-50 p-2 rounded-xl border border-slate-100">
+                                <div class="bg-brand-500/40 rounded-t h-[60%]" title="Mon: Moderate"></div>
+                                <div class="bg-brand-500/50 rounded-t h-[70%]" title="Tue: Moderate"></div>
+                                <div class="bg-brand-500/60 rounded-t h-[75%]" title="Wed: High"></div>
+                                <div class="bg-brand-500/70 rounded-t h-[80%]" title="Thu: High"></div>
+                                <div class="bg-emerald-500 rounded-t h-[95%]" title="Fri: Peak"></div>
+                                <div class="bg-emerald-500 rounded-t h-[100%]" title="Sat: Peak"></div>
+                                <div class="bg-brand-500/40 rounded-t h-[50%]" title="Sun: Light"></div>
+                            </div>
+                            <div class="flex justify-between text-[9px] font-extrabold text-slate-400 uppercase">
+                                <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Card -->
+                    <div class="bg-slate-100 rounded-3xl border border-slate-200 overflow-hidden shadow-sm aspect-[4/3] relative">
+                        <div class="absolute inset-0 flex items-center justify-center p-6 text-center bg-slate-900/10 backdrop-blur-[1px]">
+                            <div class="bg-white/95 p-6 rounded-2xl shadow-xl max-w-xs space-y-2 border border-slate-100">
+                                <span class="text-2xl font-bold block">📍</span>
+                                <h4 class="font-extrabold text-brand-dark text-sm">Elite Motors DHA Showroom</h4>
+                                <p class="text-xs text-slate-500">Plot 45, Main Boulevard, Phase 6, DHA, Lahore</p>
+                                <a href="https://maps.google.com" target="_blank" class="inline-block px-4 py-2 bg-brand-dark text-white rounded-xl text-xs font-bold mt-2 shadow">
+                                    Open in Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-14 space-y-2">
+                <span class="text-xs font-bold text-brand-500 uppercase tracking-widest">Clear Answers</span>
+                <h2 class="text-3xl font-extrabold text-brand-dark">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4" id="faqAccordion">
+                
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="w-full p-6 text-left font-extrabold text-brand-dark flex justify-between items-center focus:outline-none faq-btn">
+                        <span>How does the bespoke custom order import process work?</span>
+                        <span class="faq-icon text-brand-500 text-xl font-bold">+</span>
+                    </button>
+                    <div class="px-6 pb-6 text-xs text-slate-600 leading-relaxed hidden faq-content">
+                        If a specific supercar trim or interior color isn't available in our Lahore showroom stock, we source zero-meter vehicles directly from official European or UK dealerships. We handle customs duties, shipping, inspection grading, and local registration within 4 to 6 weeks.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="w-full p-6 text-left font-extrabold text-brand-dark flex justify-between items-center focus:outline-none faq-btn">
+                        <span>What warranty coverage is included with my luxury vehicle?</span>
+                        <span class="faq-icon text-brand-500 text-xl font-bold">+</span>
+                    </button>
+                    <div class="px-6 pb-6 text-xs text-slate-600 leading-relaxed hidden faq-content">
+                        All zero-meter vehicles purchased from Elite Motors come with our signature 3-Year Bumper-to-Bumper Protection Warranty. Electric models like the Porsche Taycan or Audi e-tron include dedicated 8-year high-voltage battery health guarantees supported by our certified technicians.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="w-full p-6 text-left font-extrabold text-brand-dark flex justify-between items-center focus:outline-none faq-btn">
+                        <span>Can I trade in my existing luxury car?</span>
+                        <span class="faq-icon text-brand-500 text-xl font-bold">+</span>
+                    </button>
+                    <div class="px-6 pb-6 text-xs text-slate-600 leading-relaxed hidden faq-content">
+                        Yes! We offer market-leading valuation for pristine, accident-free luxury vehicles. Bring your vehicle to our DHA Phase 6 showroom for an instant 30-minute technical evaluation, and apply its value directly towards your new acquisition.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="w-full p-6 text-left font-extrabold text-brand-dark flex justify-between items-center focus:outline-none faq-btn">
+                        <span>Is doorstep test drive delivery available outside Lahore?</span>
+                        <span class="faq-icon text-brand-500 text-xl font-bold">+</span>
+                    </button>
+                    <div class="px-6 pb-6 text-xs text-slate-600 leading-relaxed hidden faq-content">
+                        We provide doorstep home test drives across Lahore (DHA, Gulberg, Model Town, Bahria Town). For pre-approved buyers in Islamabad, Rawalpindi, and Faisalabad, our enclosed trailer service delivers vehicles for private viewing by appointment.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-50 border-t border-slate-200 text-slate-600 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="md:col-span-4 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-sky-400 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                            EM
+                        </div>
+                        <span class="font-extrabold text-lg tracking-tight text-brand-dark">ELITE MOTORS LAHORE</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-500">
+                        Pakistan's premier dealership for certified luxury automobiles, electric supercars, and custom imports. Located in DHA Phase 6, Lahore.
+                    </p>
+                    <p class="text-xs font-semibold text-slate-400">© 2026 Elite Motors Lahore. All rights reserved.</p>
+                </div>
+
+                <div class="md:col-span-2 space-y-3">
+                    <h4 class="text-xs font-extrabold text-brand-dark uppercase tracking-wider">Navigation</h4>
+                    <ul class="space-y-2 text-xs font-semibold">
+                        <li><a href="index.html" class="hover:text-brand-500">Home</a></li>
+                        <li><a href="inventory.html" class="hover:text-brand-500">Inventory</a></li>
+                        <li><a href="financing.html" class="hover:text-brand-500">Financing</a></li>
+                        <li><a href="about.html" class="hover:text-brand-500">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-500">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-xs font-extrabold text-brand-dark uppercase tracking-wider">Showroom Contact</h4>
+                    <p class="text-xs leading-relaxed text-slate-500">
+                        Plot 45, Main Boulevard, Phase 6, DHA, Lahore, Punjab, Pakistan
+                    </p>
+                    <p class="text-xs font-bold text-brand-dark">Phone: +92 42 35789012</p>
+                </div>
+
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-xs font-extrabold text-brand-dark uppercase tracking-wider">Working Hours</h4>
+                    <p class="text-xs text-slate-500 font-medium">Monday - Saturday: 10:00 AM - 9:00 PM</p>
+                    <p class="text-xs text-slate-500 font-medium">Sunday: 2:00 PM - 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INLINE JS FOR REAL-TIME OPEN STATUS & FAQ ACCORDION -->
+    <script>
+        // Check real-time Pakistan business hours
+        function updateShowroomStatus() {
+            const badge = document.getElementById('openStatusBadge');
+            const now = new Date();
+            // Convert to Pakistan Time (UTC+5)
+            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            const pktDate = new Date(utc + (3600000 * 5));
+            const hour = pktDate.getHours();
+            const day = pktDate.getDay(); // 0 is Sun, 1-6 Mon-Sat
+
+            let isOpen = false;
+            if (day === 0) {
+                // Sunday: 2 PM - 8 PM
+                if (hour >= 14 && hour < 20) isOpen = true;
+            } else {
+                // Mon-Sat: 10 AM - 9 PM
+                if (hour >= 10 && hour < 21) isOpen = true;
+            }
+
+            if (isOpen) {
+                badge.innerText = "🟢 Showroom Currently OPEN";
+                badge.className = "px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200";
+            } else {
+                badge.innerText = "🔴 Showroom Currently CLOSED";
+                badge.className = "px-3 py-1 rounded-full text-xs font-extrabold bg-rose-50 text-rose-700 border border-rose-200";
+            }
+        }
+
+        updateShowroomStatus();
+
+        // FAQ Accordion Toggle
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.faq-icon');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.innerText = "−";
+                } else {
+                    content.classList.add('hidden');
+                    icon.innerText = "+";
+                }
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+
+    <!-- CHATBOT -->
+    <script>
+        console.log("Chatbot placeholder initialized");
+    </script>
+</body>
+</html>
